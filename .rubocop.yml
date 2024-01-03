@@ -1,13 +1,27 @@
 AllCops:
+  NewCops: disable
   TargetRubyVersion: 2.6
 
 Style/StringLiterals:
-  Enabled: true
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
-Style/StringLiteralsInInterpolation:
-  Enabled: true
-  EnforcedStyle: double_quotes
+Style/SymbolArray:
+  EnforcedStyle: percent
 
-Layout/LineLength:
-  Max: 120
+Style/WordArray:
+  EnforcedStyle: percent
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%i": "()"
+    "%I": "()"
+    "%q": "()"
+    "%Q": "()"
+    "%r": "()"
+    "%s": "()"
+    "%w": "()"
+    "%W": "()"
+    "%x": "()"
+
+Style/HashSyntax:
+  EnforcedStyle: ruby19_no_mixed_keys
